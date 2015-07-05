@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-	# resource :movies
-  get 'movies' => 'movies#index'
+	root :to => 'movies#index'
+	get 'movies' => 'movies#index'
   get 'movies/new' => 'movies#new', as: 'new_movie'
   get 'movies/:id' => 'movies#show', as: 'movie'
   post 'movies' => 'movies#create'

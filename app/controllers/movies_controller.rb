@@ -51,6 +51,4 @@ class MoviesController < ApplicationController
       redirect_to edit_movie_path(@movie)
     end
   end
-
-
 end
