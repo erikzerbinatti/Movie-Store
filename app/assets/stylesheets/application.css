@@ -186,3 +186,7 @@ small.year {
 	top: 5px;
 	right: 0px;
 }
+
+a.btn.btn-voltar {
+  float: right;
+}
