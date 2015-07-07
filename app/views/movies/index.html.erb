@@ -2,6 +2,15 @@
 
 <div class="add"><%= link_to 'Add New Movie', new_movie_path, class:"btn btn-add" %></div>
 
+<div class="search">
+  <%= form_tag(movies_path, :method => 'get') do %>
+    <div class="search">
+      <%= text_field_tag :search, params[:search] %>
+      <button class="btn" type="submit">Search</button>
+    </div>
+  <% end %>
+</div>
+
 <table>
   <thead>
     <tr>

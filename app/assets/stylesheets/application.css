@@ -56,6 +56,10 @@ a:hover {
 	color: #F57F17;
 }
 
+.search {
+  padding-top: 10px;
+}
+
 table {
 	width: 100%;
 	border-collapse: collapse;
