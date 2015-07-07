@@ -31,7 +31,7 @@
         <td class="action">
           <%= link_to 'Edit', edit_movie_path(movie), class:"btn" %> | 
           <%= 
-            link_to 'Delete', destroy_movie_path(movie), 
+            link_to 'Delete', movie_path(movie), 
               class:"btn btn-delete", 
               data:{confirm: 'Are you sure?'}, 
               :method => :delete 

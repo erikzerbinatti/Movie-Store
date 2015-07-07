@@ -24,8 +24,8 @@ class MoviesController < ApplicationController
       flash[:success] = 'Salvo com sucesso!'
       redirect_to @movie
     else
-      flash[:error] = 'Campo "Name" obrigatório!'
-      redirect_to new_movie_path
+      # flash[:error] = 'Campo "Name" obrigatório!'
+      render :new
     end 
   end
 
